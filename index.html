@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple and accessible digital calculator">
+    <title>Digital Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <header class="calculator-header">
+            <div class="header-content">
+                <div class="icon" aria-label="RCS logo">
+                    <span>RCS</span>
+                </div>
+                <h1 aria-label="Digital Calculator">Digital Calculator</h1>
+            </div>
+        </header>
+
+        <div class="calculator-screen" role="form">
+            <input type="text" id="screen" aria-label="Calculator screen" readonly>
+        </div>
+
+        <div class="calculator-buttons" role="group" aria-label="Calculator keys">
+            <button aria-label="Clear screen" onclick="clearScreen()">C</button>
+            <button aria-label="Number 7" onclick="appendValue('7')">7</button>
+            <button aria-label="Number 8" onclick="appendValue('8')">8</button>
+            <button aria-label="Number 9" onclick="appendValue('9')">9</button>
+            <button aria-label="Divide" onclick="appendValue('/')">/</button>
+            <button aria-label="Number 4" onclick="appendValue('4')">4</button>
+            <button aria-label="Number 5" onclick="appendValue('5')">5</button>
+            <button aria-label="Number 6" onclick="appendValue('6')">6</button>
+            <button aria-label="Multiply" onclick="appendValue('*')">*</button>
+            <button aria-label="Number 1" onclick="appendValue('1')">1</button>
+            <button aria-label="Number 2" onclick="appendValue('2')">2</button>
+            <button aria-label="Number 3" onclick="appendValue('3')">3</button>
+            <button aria-label="Subtract" onclick="appendValue('-')">-</button>
+            <button aria-label="Number 0" onclick="appendValue('0')">0</button>
+            <button aria-label="Decimal point" onclick="appendValue('.')">.</button>
+            <button aria-label="Add" onclick="appendValue('+')">+</button>
+            <button aria-label="Equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
